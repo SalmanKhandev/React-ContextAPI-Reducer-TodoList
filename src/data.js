@@ -17,6 +17,6 @@ export const data = [
   },
   {
     id: 5,
-    name: "Bilal Khan",
+    name: "Muhammad Khan",
   },
 ];
