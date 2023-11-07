@@ -1,11 +1,14 @@
 import React from "react";
 
-const Person = ({ id, name }) => {
-  console.log(id, name);
+const Person = (props) => {
+  const { person, onRemove } = props;
+
   return (
     <div>
-      <h2 key={id}>{name}</h2>
-      <button type="button">Remove</button>
+      <h2 key={person.id}>{person.name}</h2>
+      <button type="button" onClick={() => onRemove(person.id)}>
+        Remove
+      </button>
     </div>
   );
 };

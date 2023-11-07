@@ -26,15 +26,7 @@ const List = () => {
   return (
     <div>
       {state.people.map((person) => {
-        const { id, name } = person;
-        return (
-          <div key={id}>
-            <h2>{name}</h2>
-            <button type="button" onClick={() => remove(id)}>
-              Remove
-            </button>
-          </div>
-        );
+        return <Person key={person.id} person={person} onRemove={remove} />;
       })}
       <hr />
       <button style={{ marginTop: "20px" }} type="button" onClick={reset}>
