@@ -10,7 +10,6 @@ const defaultState = {
 };
 
 const List = () => {
-  const [people, setPeople] = useState(data);
   const [state, dispatch] = useReducer(reducer, defaultState);
   const remove = (id) => {
     dispatch({ type: REMOVE, payload: { id: id } });
