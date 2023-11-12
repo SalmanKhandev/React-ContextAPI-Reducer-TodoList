@@ -1,12 +1,12 @@
 import { useState } from "react";
-import List from "./List";
+import Transition from "./UserTransition";
 import "./app.css";
 function App() {
   return (
     <>
       <div>
         <div>
-          <List />
+          <Transition />
         </div>
       </div>
     </>
